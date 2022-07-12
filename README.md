@@ -19,6 +19,7 @@ nature， 22 March 2022
 ## 创新点  
 报道了在tRNAs中对2‘-磷酸核苷(Up)的鉴定，这是已知的第一个内部RNA磷酸化的实例。生化、结构和遗传学研究表明，Up47是一种可逆的RNA修饰，赋予tRNA热稳定性，从而促进细胞的耐热性。
 
+
 ## Discovery of Up in tRNA  
 
 1. 通过质谱分析（RNA-MS）→ 确定13种tRNA修饰，发现N324/U47
@@ -37,21 +38,32 @@ nature， 22 March 2022
 
 ## Structural study of Up47 in native tRNA  
 
-## Identification of an RNA kinase for Up47 在2'写入磷酸基团的基因鉴定  
+## Identification of an RNA kinase for Up47 
+  在2'写入磷酸基团的基因鉴定  
+
 To identify a gene responsible for Up47 formation, we narrowed down the candidate genes in the S. tokodaii genome by performing a comparative genomic analysis of sequenced genomes using RECOG (http://mbgd.genome.ad.jp/RECOG/). According to our analysis of Up47 distribution in archaeal species (Supplementary Note 4, Extended Data Fig. 8a–d), Up47 is present in seven archaeal species, including in S. tokodaii, but is absent in two species (Fig. 3a). Among the 2,826 genes encoded in the S. tokodaii genome, only nine genes (Supplementary Table 4) were commonly found in all seven archaeal species with Up47 (Fig. 3b). Among them, five genes (Supplementary Table 4) were of uncharacterized function (Fig. 3b). We chose one gene encoding a putative protein kinase, STK_09530 (hypothetical serine/threonine kinase, COG2112), as a strong candidate (Fig. 3b). STK_09530 resides in an operon containing a gene for a tRNA nucleotidyltransferase STK_09520), implying that it encodes an enzyme related to tRNA maturation. We then constructed a strain of T. kodakarensis lacking tk2051, an orthologue of STK_09530. The tRNA fraction obtained from the Δtk2051 strain was subjected to liquid chromatography followed by MS (LC–MS) nucleotide analysis. A pUpm5C dimer was clearly observed in the parental strain (wild type) of T. kodakarensis (KU216), but was absent in the Δtk2051 strain (Fig. 3c). Therefore, tk2051 is the gene responsible for Up47 formation in cells. We designated the gene arkI(archaeal RNA
-* 目的：确定一个负责Up47形成的基因
-1.
+* 目的：确定一个负责Up47形成的基因  
+### step 1：确定哪些物种中含有或不含Up47
 * 材料： S. tokodaii genome等9种古细菌，其他真核生物和细菌
-* 方法：使用recog(http://mbgd.genome.ad.jp/RECOG/)对测序基因组进行比较基因组分析，缩小了该基因组的候选基因范围;在古菌生物中分析  
-结果：在7中古菌中存在，在2种中缺失
+* 方法：digested by nuclease P1 and subjected to LC/MS analysis to detect pUpm5C (m/z 724, z = 1)；orcapillaryLC/nanoESI-MS (shotgun analysis)
+* 结果：发现在7中古菌中存在Up47，在2种中缺失
 图注：
 不含Up47：Bacteria (E. coli), Eukarya (Homo sapiens, S. cerevisiae and Arabidopsis thaliana) and Archaea (Methanosarcina acetivorans, 
 Thermoplasma acidophilum,）
 含Up47：S. tokodaii, Sulfolobus acidocaldarius, Saccharolobus solfataricus, Aeropyrum pernix, Pyrobaculum oguniense, T. kodakarensis and Nitrososphaera viennensis  
 ![韦恩图](./pictures/%E5%88%86%E5%B8%83%E9%9F%A6%E6%81%A9%E5%9B%BE.jpg)
-2.
-* 材料： S. tokodaii genome
-* 方法： 
-* 结果： S. tokodaii genome基因组一共编码2826个基因，含有Up47的7个古细菌中共同含有的基因一共9个；其中5个是和写入甲基化无关的基因，于是排除；最后选定了一共推测的蛋白激酶 STK_09530，STK_09530位于一个包含tRNA核苷酸转移酶(STK_09520)基因的操纵子中，这意味着它编码一种与tRNA成熟相关的酶。
+### step2： 基因筛选流程    
+* 原理： 在含有Up47的物种中取基因交集，且该基因不应该在其他不含Up47的物种中存在
+* 材料： S. tokodaii genome 等9种古细菌，其他真核生物和细菌
+* 方法：使用recog(http://mbgd.genome.ad.jp/RECOG/)对测序基因组进行比较基因组分析，缩小了该基因组的候选基因范围
+* 结果： S. tokodaii genome基因组一共编码2826个基因，含有Up47的7个古细菌中共同含有的基因一共9个；其中5个是和写入甲基化无关的基因，于是排除；最后选定了一共推测的蛋白激酶 STK_09530，STK_09530位于一个包含tRNA核苷酸转移酶(STK_09520)基因的操纵子中，这意味着它编码一种与tRNA成熟相关的酶。  
+![筛选流程图](./pictures/%E7%AD%9B%E9%80%89%E6%B5%81%E7%A8%8B%E5%9B%BE.jpg)  
 
-构建了缺乏STK_09530同源基因tk2051的 T. kodakarensis菌株。从Δtk2051菌株中获得的tRNA部分进行液相色谱，然后进行MS(LC-MS)核苷酸分析。在 T. kodakarensis野生菌株(KU216)中明显可见pUpm5C二聚体，但在Δtk2051菌株中缺失(图3c)。因此，tk2051是细胞中负责Up47形成的基因。我们将该基因命名为arkI(古菌RNA激酶)。
+### step3:筛选出的基因的各项功能等  
+STK_09530位于一个包含tRNA核苷酸转移酶(STK_09520)基因的操纵子中，这意味着它编码一种与tRNA成熟相关的酶。作者构建了缺乏STK_09530同源基因tk2051的 T. kodakarensis菌株。从Δtk2051菌株中获得的tRNA片段进行液相色谱，然后进行MS(LC-MS)核苷酸分析。在 T. kodakarensis野生菌株(KU216)中明显可见pUpm5C二聚体，但在Δtk2051菌株中缺失(图3c)。因此，tk2051是细胞中负责Up47形成的基因。我们将该基因命名为arkI(古菌RNA激酶)。
+
+### 需要做的工作：
+1. 画古菌门进化图，了解该门包括哪些界
+2. 上面提到的9种古菌列表格，包括：名称，界及各分类，基因组数据，生存环境，其他
+
+
